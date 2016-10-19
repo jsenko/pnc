@@ -46,7 +46,6 @@ import java.util.function.Supplier;
 @ApplicationScoped
 public class PullingMonitor {
 
-    /** */
     private static final TimeUnit DEFAULT_TIME_UNIT = TimeUnit.SECONDS;
 
     private ScheduledExecutorService executorService;
@@ -54,9 +53,9 @@ public class PullingMonitor {
 
     private ConcurrentSet<RunningTask> runningTasks;
 
-    @Inject
     private Configuration configuration;
 
+    @Deprecated
     public PullingMonitor() {
     }
 
